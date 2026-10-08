@@ -1,17 +1,34 @@
-# Hypothesis & Success Metrics
+# Hypothesis & Success Metrics (Module 3)
 
-> **Module 3 · ★ Deliverable 3.** Repo file `03-analytics/hypothesis-and-metrics.md` — part of your submission.
-> Do the lab in the **Module 3 · Exercise Guide** (linked from the Module 3 deck), then click **⬇ Download .md** — it saves as this exact file. Commit it here.
-> It feeds the **Problem, Value & Hypothesis** slide of your Module 6 final deck.
+## Pre-work · Hypothesis check
+- **Role , who you are solving for (from M2):** Responsible Payer (parent, patient, or self-payer responsible for the financial commitment).
+- **Goal , what this user is ultimately trying to achieve:** Understand one clear and predictable payment commitment, including what is financed, what the monthly payment will be, and how the financial obligation may change over time.
+- **Friction / moment of misery , the specific pain blocking their goal:** The customer is asked to commit to an installment plan without clearly understanding what is being financed, who is responsible for payment, or how the financial obligation may change over time. As a result, the customer faces a financial decision without a clear and predictable picture of the commitment.
+- **Current workaround , the external tool or manual process they rely on (M2):** Customers manually piece together information from treatment plans, invoices, financing offers, and conversations with the practice or driving school to understand their actual financial commitment. They often rely on spreadsheets, personal calculations, or direct clarification from staff to estimate what they will ultimately pay.
+- **Problem Hook , your one-sentence framing of the business crisis (M1):** We must prevent increasing product fragmentation from limiting the scalability of BFS's installment-plan business by replacing repeated client-specific configurations with a standardized, configurable installment-plan framework that dynamically applies the right rules for each customer, transaction, client, and market.
+- **Value Proposition , the outcome your initiative promised to deliver (M1):** For BFS clients that need flexible installment solutions across different customer groups, markets, and use cases, we provide a standardized but configurable installment-plan framework that applies reusable rules while allowing controlled variation where needed. This enables faster onboarding, easier adaptation to market and regulatory requirements, and reduced dependency on bespoke implementations.
 
-## Finalized product hypothesis
+## Read your data snapshots
+- **Does the funnel data confirm your M2 friction point, or does it tell a different story? Note where the numbers align with the qualitative pain you found and where they diverge.:** _(not filled in)_
+- **Do the retention patterns align with the workaround your M2 persona used to find content? Note what the Mo. 0→1 drop suggests about the onboarding experience your persona described as frustrating.:** _(not filled in)_
+- **Does the LTV gap and the content mix (61% trending for Wanderers) confirm the moment of misery your persona described? Note which segment your persona is in and whether the data confirms their pain.:** _(not filled in)_
+- **Does the low adoption confirm your persona is burdened by tools they don’t use? Note whether the low scheduling adoption (42%) for coordinators matches your M2 moment of misery.:** _(not filled in)_
+- **Does the workflow data match the manual process or hack you documented in M2? Note whether the specific drop-offs or time gaps explain why your persona avoids the digital tool.:** _(not filled in)_
+- **Look at the CSAT heatmap. Which specific cell most directly maps to your persona’s friction? Note how the NPS trend justifies the urgency of your M1 Problem Hook.:** _(not filled in)_
 
-> Based on [qual + quant evidence], I believe that [solving X] for [persona] will result in [outcome], as measured by a [X%] change in [success metric]. I will protect [guardrail metric] and make a go/no-go decision after [decision window].
+## Step 3 · Craft your hypothesis
+- **Qualitative evidence (from M2) , quote the specific friction / moment of misery for your persona:** Customers struggle to understand what is actually being financed and how their financial obligation may change over time.
 
-## Success metrics
+Supporting quotes:
 
-| Metric | Type | Target | Why it matters |
-|---|---|---|---|
-| _North-star_ | | _____ | _____ |
-| _Leading indicator_ | | _____ | _____ |
-| _Guardrail_ | | _____ | _____ |
+"I don't understand what the installment is actually based on — the full treatment cost, my co-payment or just this invoice?" (UXR-08)
+
+"I'd rather know: what am I roughly paying per month, and how much could that still change?" (UXR-02)
+- **Quantitative evidence (from M3) , name the metric or data point that confirms the pain; cite the number:** 46.2K of 316K installment agreements have a manual contact attempt after creation, around 14.6%. These cases show stronger signs of payment or adjustment needs: 34.35% direct debit return rate vs. 13.00% overall, 14.99% extension rate vs. 6.76% overall, plus 6.05K extended and 6.73K shortened agreements. In orthodontics, 920 of 7.12K agreements, around 12.9%, have post-creation contact, so KFO is not more contact-heavy than the overall base. The issue appears broader than one specialty and more linked to post-setup management needs.
+- **Persona , role, goal, and the friction you confirmed in the reconciliation steps:** Responsible Payer – A parent, patient, or self-payer seeking a clear and predictable financing commitment. The primary friction is having to make a financing decision without fully understanding the financed amount, payment responsibility, and how changing costs affect the agreement.
+- **Problem you are solving , one sentence describing the specific friction this initiative removes:** Customers struggle to maintain a clear understanding of their financial commitment when payment plans require adjustments, extensions, or other post-creation changes.
+- **Strategic outcome , what behaviour change do you expect, and how does it map to retention / revenue / churn?:** Increase customer confidence in managing installment plans over time, resulting in fewer manual interventions, fewer payment-related issues, higher plan completion rates, and improved scalability of the installment business.
+- **Primary success metric (initiative signal) , the leading indicator that tells you the gap is closing:** Percentage of installment agreements requiring manual contact after creation.
+- **Guardrail metric (product signal) , the metric that must NOT drop; it protects your existing base:** Direct debit return rate must not increase while reducing manual contacts.
+- **Decision window , how much time or data before you scale, pivot, or kill? minimum threshold to proceed?:** Evaluate after the first pilot cohort or after sufficient volume has been collected to compare post-creation contact rates, plan adjustments, and direct debit returns against the baseline values.
+- **Draft your full hypothesis sentence , one to three sentences; quote the metric, name the persona, name the outcome:** Based on qualitative evidence that customers struggle to understand what their installment agreement actually covers and how it changes over time, and quantitative evidence showing that 14.6% of installment plans require manual contact after creation and are associated with significantly higher direct debit return rates (34.35% vs. 13.00%), I believe that providing a standardized and configurable installment-plan framework that maintains transparency throughout the life of the agreement for the Responsible Payer will reduce post-creation confusion and operational intervention. Success will be measured by a reduction in the post-creation manual contact rate from the current 14.6%, while protecting overall direct debit return rates. A go/no-go decision will be made after the first pilot cohort evaluation.
